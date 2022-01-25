@@ -15,10 +15,8 @@
                 <%= link_to list.name, list_path(list), style: "text-decoration: none; color: #ffffff; font-size: 14px; " %>
             </div>
             </div>
+         <%= link_to "❌", list_path(list), method: :delete, data: { confirm: "Are you sure?" }, class: "card-remove-link" %>
           <% end %>
-          <%# <%=  link_to "❌", list_bookmark_path(@list.id, @bookmark), method: :delete %>
-         <%= link_to "❌", list_bookmark_path(), method: :delete, data: { confirm: "Are you sure?" }, class: "card-remove-link" %>
-
     </div>
     <%= link_to "Create a new list", new_list_path, class: "btn btn-success text-white rounded-pill ml-3 mt-4 shadow mb-5"%>
 </div>
