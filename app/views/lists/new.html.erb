@@ -1,0 +1,8 @@
+<div class="container my-5">
+<h1>Add a list</h1>
+<%= simple_form_for [@list] do |f| %>
+<%= f.input :name %>
+<%= f.input :image_url, input_html: {value: ""} %>
+<%= f.submit 'Add list', class: "btn btn-dark rounded-pill" %>
+<% end %>
+</div>
